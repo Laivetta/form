@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 
 import { FormGroupEjemploComponent } from './form-group-ejemplo/form-group-ejemplo.component';
 
+import {GoogleMapsModule} from  "@angular/google-maps"
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { FormGroupEjemploComponent } from './form-group-ejemplo/form-group-ejemp
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

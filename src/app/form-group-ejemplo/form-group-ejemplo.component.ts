@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 
 
 @Component({
@@ -9,9 +9,9 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class FormGroupEjemploComponent implements OnInit {
 
-  formulario = new FormGroup({
-    nombre: new FormControl(''),
-    apellido: new FormControl('')
+  formulario = new UntypedFormGroup({
+    nombre: new UntypedFormControl(''),
+    apellido: new UntypedFormControl('')
   })
 
   persona: Persona;
